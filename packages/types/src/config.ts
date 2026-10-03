@@ -1,4 +1,4 @@
-import type { E2RNPlugin, NodeRuntimePlugin, ElectronApiPlugin, BuiltinPolyfillPlugin, ContentTransformPlugin, ModuleMapperPlugin, TemplatePlugin } from './plugin';
+import type { E2RNPlugin, ElectronApiPlugin, BuiltinPolyfillPlugin, ContentTransformPlugin, ModuleMapperPlugin, TemplatePlugin } from './plugin';
 
 export interface E2RNConfig {
   electronProjectPath: string;
@@ -58,10 +58,4 @@ export interface E2RNConfig {
     verbose?: boolean;
     concurrency?: number;
   };
-}
-
-export interface TemplatePlugin extends E2RNPlugin {
-  type: 'template';
-  templatesDir: string;
-  files?: string[];
 }

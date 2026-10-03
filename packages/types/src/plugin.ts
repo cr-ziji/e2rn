@@ -103,3 +103,9 @@ export interface ContentTransformPlugin extends E2RNPlugin {
     type?: 'string' | 'regex' | 'function';
   }>;
 }
+
+export interface TemplatePlugin extends E2RNPlugin {
+  type: 'template';
+  templatesDir: string;
+  files?: string[];
+}
