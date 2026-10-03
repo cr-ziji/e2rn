@@ -1,0 +1,6 @@
+{
+  "name": "simple-main-renderer",
+  "version": "1.0.0",
+  "main": "main.js",
+  "private": true
+}
