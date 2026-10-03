@@ -1,0 +1,12 @@
+{
+  "name": "e2rn-template-rn-default",
+  "version": "0.1.0-alpha.0",
+  "private": true,
+  "description": "Default RN template for E2RN (In-Process main runtime)",
+  "files": [
+    "src",
+    "e2rn",
+    "android",
+    "ios"
+  ]
+}
