@@ -1,0 +1,31 @@
+{
+  "name": "@e2rn/cli",
+  "version": "0.1.0-alpha.0",
+  "description": "CLI for E2RN (Electron to React Native)",
+  "type": "module",
+  "bin": {
+    "e2rn": "./dist/bin/e2rn.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/bin/e2rn.ts src/index.ts --format esm --dts",
+    "dev": "tsup src/bin/e2rn.ts src/index.ts --format esm --dts --watch",
+    "clean": "rimraf dist",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@e2rn/types": "workspace:*",
+    "cac": "^6.7.14",
+    "chalk": "^5.3.0",
+    "ora": "^8.1.1",
+    "picocolors": "^1.1.1"
+  },
+  "devDependencies": {
+    "tsup": "^8.3.5",
+    "typescript": "^5.6.3"
+  }
+}
